@@ -323,11 +323,12 @@ nav li.selected > a {
         font-family: "Font Awesome 5 Free";
         font-size: 20px;
         font-weight: 900;
-        transition: transform 1.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
 
     .hamburger-mobile.open::before { transform: rotate(-90deg); }
     nav > ul { display: block; }
+    nav > ul.display-none { display: none; }
     
     nav li > a {
         padding: 10px 0;
