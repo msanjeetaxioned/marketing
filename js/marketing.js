@@ -1,6 +1,18 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function(event) {
+    const body = document.body;
+    const hamburgerMobile = body.querySelector(".hamburger-mobile");
+    const navList = body.querySelector("nav > ul");
+
+    hamburgerMobile.addEventListener("click", function() {
+        hamburgerMobile.classList.toggle("open");
+        var timeout = setTimeout(function() {
+            navList.classList.toggle("display-none");
+            clearTimeout(timeout);
+        }, 600);
+    });
+
     const totalItems = 3;
-    let carouselContainer = document.querySelector(".carousel-container");
+    let carouselContainer = body.querySelector(".carousel-container");
     let currentItem = 1;
     let previousButton = carouselContainer.querySelector(".carousel-buttons > span[title='Previous']");
     let nextButton = carouselContainer.querySelector(".carousel-buttons > span[title='Next']");
