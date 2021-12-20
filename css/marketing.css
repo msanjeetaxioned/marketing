@@ -84,7 +84,7 @@ nav li.selected > a {
 }
 
 .carousel > li > span {
-    padding: 20px 35px;
+    padding: 20px 2.38%;
     position: absolute;
     top: 30px;
     right: 20px;
@@ -264,7 +264,7 @@ nav li.selected > a {
 }
 
 .sign-up > button {
-    padding: 20px 2.38%;
+    padding: 20px 7%;
     border: none;
     display: inline-block;
     background: rgba(76, 175, 80, 1);
