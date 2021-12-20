@@ -254,6 +254,7 @@ nav li.selected > a {
     color: #000;
     margin-bottom: 35px;
     font-size: 40px;
+    font-weight: bold;
     letter-spacing: 5px;
 }
 
@@ -307,5 +308,140 @@ nav li.selected > a {
 
 /* For Mobile resolution */
 @media only screen and (max-width: 767px) {
+    .hamburger-mobile {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .hamburger-mobile::before {
+        content: "\f0c9";
+        display: inline-block;
+        color: rgba(51, 60, 69, 1);
+        font-family: "Font Awesome 5 Free";
+        font-size: 20px;
+        font-weight: 900;
+        transition: transform 1.5s ease-in-out;
+    }
+
+    .hamburger-mobile.open::before { transform: rotate(-90deg); }
+    nav > ul { display: block; }
     
+    nav li > a {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .title { 
+        margin-top: 45px;
+        margin-bottom: 45px; 
+    }
+    
+    .title > h1 {
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    
+    .title > span { font-size: 18px; }
+
+    .carousel > li > span {
+        padding: 5px 1.5%;
+        position: absolute;
+        top: 10px;
+        right: 1.36%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .carousel-buttons { padding: 10px 1%; }
+    .carousel-buttons > span::before { font-size: 20px; }
+
+    .carousel-squares > li > span {
+        width: 14px;
+        height: 14px;
+    }
+
+    .what-we-offer { margin-top: 45px; }
+    .what-we-offer > h2 { margin-bottom: 30px; }
+    
+    .what-we-offer > h2 > span {
+        padding-bottom: 15px;
+        border-bottom: 5px solid #ccc;
+        font-size: 22px;
+    }
+    
+    .what-we-offer > ul { flex-direction: column; }
+    
+    .what-we-offer > ul > li { 
+        padding: 15px 2% 15px 2%;
+        flex: unset;
+    }
+
+    .what-we-offer li > h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    
+    .what-we-offer li > p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .pricing-plans {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .pricing-plans > h2 {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .pricing-plans > span { font-size: 16px; }
+
+    .pricing-plans > ul { 
+        margin-top: 30px;
+        flex-direction: column;
+        column-gap: unset;
+    }
+
+    .pricing-plans > ul > li {
+        margin-bottom: 15px;
+        flex: unset; 
+    }
+
+    .pricing-plans > ul > li:last-child { margin-bottom: 0; }
+    
+    .pricing-plans li > span { 
+        padding: 15px 0;
+        font-size: 16px;
+    }
+        
+    .pricing-plans li > span:first-child {
+        padding: 25px 0;
+        font-size: 18px;
+    }
+    
+    .pricing-plans li:nth-child(even) > span:first-child { background: #616161; }
+    .price-per-month { padding: 15px 0; }
+    .price-per-month > span { font-size: 14px; }
+    
+    .price-per-month > span:first-child {
+        margin-bottom: 15px;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    
+    .sign-up { padding: 15px 0; }
+    
+    .sign-up > button {
+        padding: 10px 5%;
+        font-size: 16px;
+    }
+    
+    .sign-up > button:hover {
+        background: rgba(51, 60, 69, 1);
+        color: #fff;
+        cursor: pointer;
+    }
 }
