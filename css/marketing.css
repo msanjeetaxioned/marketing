@@ -73,6 +73,8 @@ nav li.selected > a {
 .title > span > a:hover { color: #bbb; }
 
 .carousel {
+    position: relative;
+    font-size: 0;
     overflow: hidden;
     white-space: nowrap;
 }
