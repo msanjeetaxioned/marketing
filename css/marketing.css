@@ -241,10 +241,7 @@ nav li.selected > a {
 }
 
 .pricing-plans li:nth-child(even) > span:first-child { background: #616161; }
-
-.price-per-month {
-    padding: 50px 0 25px 0;
-}
+.price-per-month { padding: 50px 0 25px 0; }
 
 .price-per-month > span { 
     display: block;
@@ -267,7 +264,7 @@ nav li.selected > a {
 }
 
 .sign-up > button {
-    padding: 20px 35px;
+    padding: 20px 2.38%;
     border: none;
     display: inline-block;
     background: rgba(76, 175, 80, 1);
